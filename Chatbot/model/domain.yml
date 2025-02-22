@@ -1,0 +1,47 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - order_meal
+  - check_opening_hours
+  - empty
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "I am glad I was of help!"
+
+  utter_unhappy:
+  - text: "I am sorry"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_empty:
+  - text: "Your prompt is void and nothing"
+
+entities:
+  - food
+  - day
+
+actions:
+  - action_extract_food_entity
+  - action_extract_day_entity
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
