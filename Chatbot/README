@@ -1,1 +1,7 @@
-to do
+In order to use the chatbot you need to replace the DISCORD_TOKEN in .env file with actual discord token.
+To do that you need to go to https://discord.com/developers/applications, create a "New Aplication", go the the "Bot" section, click "Reset Token" and replace the DISCORD_TOKEN with generated one.
+
+Then:
+run "rasa run actions" command in "model" directory
+run "rasa shell" command in "model" directory
+run "bot.py"
