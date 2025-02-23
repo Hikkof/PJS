@@ -5,3 +5,5 @@ Then:
 run "rasa run actions" command in "model" directory
 run "rasa shell" command in "model" directory
 run "bot.py"
+
+Bot responds to prompts starting with "!rasa".
